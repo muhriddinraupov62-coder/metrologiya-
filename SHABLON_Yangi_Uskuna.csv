@@ -1,0 +1,42 @@
+﻿MUVOFIQLIK XULOSASI — YANGI USKUNA (Shablon)
+ISO/IEC 17025:2019 § 7.8.6 talablariga muvofiq
+
+ASOSIY MA'LUMOTLAR
+Buyurtmachi:,EURO PROF TEST
+Manzil:,"House 37A, Olimlar Street, Mirzo Ulugbek, Tashkent, Uzbekistan"
+
+USKUNA MA'LUMOTLARI
+Uskuna nomi:,[KIRITING]
+Model/Turi:,[KIRITING]
+Ishlab chiqaruvchi:,[KIRITING]
+Seriya №:,[KIRITING]
+O'lchov diapazoni:,[KIRITING]
+
+KALIBROVKA MA'LUMOTLARI
+Sertifikat №:,[KIRITING]
+Sertifikat sanasi:,[KIRITING]
+Kalibrovka sanasi:,[KIRITING]
+Keyingi kalibrovka:,[KIRITING]
+Kalibrovka laboratoriyasi:,[KIRITING]
+Akkreditatsiya №:,[KIRITING]
+Standart/Metod:,[KIRITING]
+
+KALIBROVKA NATIJALARI JADVALI
+№,Nominal qiymat,O'lchangan qiymat,Ko'rsatuv xatosi,MPE (Ruxsat etilgan xato),Yuqori chegara,Quyi chegara,Noaniqlik,Natija (PASS/FAIL),Izoh
+1,,,=C26-B26,,,,,"=IF(ABS(D26)<=E26,""PASS"",""FAIL"")",
+2,,,=C27-B27,,,,,"=IF(ABS(D27)<=E27,""PASS"",""FAIL"")",
+3,,,=C28-B28,,,,,"=IF(ABS(D28)<=E28,""PASS"",""FAIL"")",
+4,,,=C29-B29,,,,,"=IF(ABS(D29)<=E29,""PASS"",""FAIL"")",
+5,,,=C30-B30,,,,,"=IF(ABS(D30)<=E30,""PASS"",""FAIL"")",
+
+UMUMIY NATIJA
+Jami nuqtalar:,=COUNTA(B26:B30)
+PASS nuqtalar:,"=COUNTIF(I26:I30,""PASS"")"
+FAIL nuqtalar:,"=COUNTIF(I26:I30,""FAIL"")"
+Muvofiqlik (%):,=B34/B33*100
+
+MUVOFIQLIK XULOSASI:,"=IF(B35=0,""✅ MUVOFIQ - Foydalanishga ruxsat etiladi"",""❌ MOS EMAS - Foydalanishga ruxsat etilmaydi"")"
+
+TASDIQLASH
+Tekshiruvchi:,[F.I.SH.],Imzo:,________,Sana:,[SANA]
+Ko'rib chiqdi:,[F.I.SH.],Imzo:,________,Sana:,[SANA]

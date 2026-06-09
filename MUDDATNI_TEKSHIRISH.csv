@@ -1,0 +1,12 @@
+﻿KALIBROVKA MUDDATINI TEKSHIRISH
+Bugun:,2026-06-09
+
+№,Uskuna nomi,Seriya №,Keyingi kalibrovka,Qolgan kunlar,Status,Prioritet
+1,Brake Tester ISD-3,2023.387,2027-01-02,=(D5-$B$2),"=IF(E5<0,""MUDDATI O'TGAN"",IF(E5<30,""URGENT"",IF(E5<90,""TEZKOR"",""OK"")))","=IF(E5<0,""🚨 DARHOL"",IF(E5<30,""🔴 JUDA TEZKOR"",IF(E5<90,""🟡 REJALASHTIRISH"",""🟢 YAXSHI"")))"
+2,Megaommetr ЦС0202-2,93753,2026-05-13,=(D6-$B$2),"=IF(E6<0,""MUDDATI O'TGAN"",IF(E6<30,""URGENT"",IF(E6<90,""TEZKOR"",""OK"")))","=IF(E6<0,""🚨 DARHOL"",IF(E6<30,""🔴 JUDA TEZKOR"",IF(E6<90,""🟡 REJALASHTIRISH"",""🟢 YAXSHI"")))"
+
+STATISTIKA
+Jami uskunalar:,=COUNTA(B5:B6)
+Muddati o'tgan:,"=COUNTIF(F5:F6,""MUDDATI O'TGAN"")"
+Urgent (30 kun):,"=COUNTIF(F5:F6,""URGENT"")"
+OK:,"=COUNTIF(F5:F6,""OK"")"
